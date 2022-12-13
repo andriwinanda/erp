@@ -41,7 +41,7 @@ export default {
       let token = this.token;
       this.isLoading = true;
       this.axios
-        .get("http://crmsaas.dswip.com/sales/get_url/" + token)
+        .get("https://crmsaas.dswip.com/sales/get_url/" + token)
         .then(res => {
           this.$buefy.toast.open({
             duration: 1000,
