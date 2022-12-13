@@ -441,7 +441,7 @@ created() {
   }
 };
 </script>
-<style lang="scss">
+<style>
 .border-y {
   border-top: 0.5px dashed gainsboro;
   border-bottom: 0.5px dashed gainsboro;

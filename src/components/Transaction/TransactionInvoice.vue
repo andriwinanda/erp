@@ -97,7 +97,7 @@ export default {
     "amount",
     "terbilang",
     "currency",
-    
+
     "desc",
     "log",
   ],
@@ -116,7 +116,7 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
+<style scoped>
 .sig {
   font-size: 12px;
   width: 100%;

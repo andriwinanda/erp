@@ -59,12 +59,12 @@ export default {
     company() {
       return this.$store.state.login.company;
     }
-  
+
   }
 };
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 .section {
   padding-top: 1.5rem !important;
 }

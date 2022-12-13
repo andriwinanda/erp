@@ -211,12 +211,12 @@ created() {
 
 
 
-<style lang="scss" scoped>
+<style scoped>
 .no-margin-right {
   margin-right: 0;
 }
 .profile-pict {
-  // clip: rect(0px,60px,60px,0px);
+  clip: rect(0px,60px,60px,0px);
   max-height: 52px;
   max-width: 52px;
   min-height: 52px;

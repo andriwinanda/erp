@@ -3,7 +3,7 @@
     style="width:20.5cm; font-family:Arial, Helvetica, sans-serif; font-size:12px; border:0px solid red;"
   >
     <div class="columns is-mobile">
-      
+
       <div class="column is-7">
        <h3 class="title is-6 is-marginless">No : {{no}}</h3>
           <p>Date : {{podate}}</p>
@@ -54,7 +54,7 @@
         <p style="margin:0; padding:5px 0 0 0;">Description : {{desc || "-"}} / Log : {{log}}</p>
       </div>
 
-   
+
 
       <div style="clear:both; "></div>
     </div>
@@ -85,7 +85,7 @@ export default {
   }
 };
 </script>
-<style lang="scss" scoped>
+<style scoped>
 .sig {
   font-size: 12px;
   width: 100%;
