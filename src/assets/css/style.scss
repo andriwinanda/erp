@@ -1,0 +1,197 @@
+// Import Bulma's core
+@import "~bulma/sass/utilities/_all";
+@import "@mdi/font/css/materialdesignicons.css";
+
+// Set your colors
+$primary: #434343;
+$primary-invert: findColorInvert($primary);
+$secondary: #0f0f0f;
+$secondary-invert: findColorInvert($secondary);
+$success: #00bb41;
+$success-invert: findColorInvert($success);
+$danger: #f83e3e;
+$danger-invert: findColorInvert($danger);
+$danger-dark: #b81212;
+$danger-dark-invert: findColorInvert($danger-dark);
+$warning: #fbd84a;
+$warning-invert: findColorInvert($warning);
+$info: #209cee;
+$info-invert: findColorInvert($info);
+$info-dark: #056dcf ;
+$info-dark-invert: findColorInvert($info-dark);
+
+// Sidebar
+$active-color-transparent: rgba( $secondary-invert, .1 );
+$menu-item-active-background-color: $active-color-transparent;
+$menu-item-hover-background-color: $active-color-transparent;
+$menu-item-hover-color: findColorInvert($primary);
+
+// Setup $colors to use as bulma classes (e.g. 'is-twitter')
+$colors: (
+  "white": (
+    $white,
+    $black
+  ),
+  "black": (
+    $black,
+    $white
+  ),
+  "light": (
+    $light,
+    $light-invert
+  ),
+  "dark": (
+    $dark,
+    $dark-invert
+  ),
+  "primary": (
+    $primary,
+    $primary-invert
+  ),
+  "info": (
+    $info,
+    $info-invert
+  ),
+  "success": (
+    $success,
+    $success-invert
+  ),
+  "warning": (
+    $warning,
+    $warning-invert
+  ),
+  "danger": (
+    $danger,
+    $danger-invert
+  ),
+  "danger-dark": (
+    $danger-dark,
+    $danger-dark-invert
+  ),
+  "info-dark": (
+    $info-dark,
+    $info-dark-invert
+  )
+);
+
+// Links
+$link: $primary;
+$link-invert: $primary-invert;
+$link-focus-border: $primary;
+
+// Gradient
+$gradient-theme: linear-gradient(to top, $secondary, $primary);
+$gradient-theme-horizontal: linear-gradient(to right, $primary, $secondary );
+
+// Global SCSS
+$navbar-height: 3.7rem;
+$notification-padding: 0.5rem 2.5rem 0.5rem 1.5rem;
+$shadow-custom: 0 2px 4px 2px #2224261f, 0 2px 2px 0 #22242626;
+$table-head-cell-border-width: 0 !important;
+$fs-tiny: 9pt;
+$body-font-size: 0.9rem;
+$section-padding: 1.5rem;
+@media (max-width: 768px){
+  .section{
+    padding: 1rem 0.5rem !important;
+  }
+  .flat-card>.card-content{
+    padding: 1rem !important;
+  }
+}
+
+hr{
+  margin: 0.75rem 0 !important
+}
+.field.is-grouped.is-grouped-multiline:not(:last-child) {
+  margin-bottom: 0.7rem !important;
+}
+.label {
+  font-size: 0.9rem !important;
+}
+
+// $card-shadow: $shadow-custom;
+.navbar {
+  box-shadow: $shadow-custom;
+}
+
+// .card{
+//     border-radius: 5px;
+// }
+
+.mySidebar {
+  background: $gradient-theme;
+}
+
+.flat-card {
+  border-radius: 5px !important;
+  box-shadow: $shadow-custom;
+  background-color: #ffffff;
+}
+.content ul {
+  list-style: none !important;
+  margin-top: 0 !important;
+}
+
+// Table
+.table-wrapper {
+  // overflow-x: visible !important; //change to visible
+}
+.table {
+  border: 1px solid #dbdbdb !important;
+  min-height: 20vh;
+}
+$table-head-background-color: $primary;
+$table-head-cell-color: $primary-invert !important;
+.checkbox .check {
+  background-color: white;
+}
+
+// Accordion
+.accordion-menu {
+  background-color: transparent !important;
+  color: white;
+  box-shadow: none !important;
+
+  & p {
+    color: white !important;
+    font-size: 11pt;
+    font-weight: 400;
+  }
+  & .card-content {
+    padding: 2px;
+  }
+  & .card-header-title,
+  & .card-header-icon {
+    padding: 0.5rem 1rem;
+    padding-right: 0.5rem;
+  }
+  & .card-header-icon .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+  & .card-header {
+    box-shadow: none;
+  }
+
+  & .card-header:hover,
+  & .card-header:active {
+    background-color: $active-color-transparent;
+    cursor: pointer;
+  }
+}
+
+// Shortcut
+.shortcut p {
+  font-size: $fs-tiny;
+}
+.shortcut .flat-card {
+  background: $gradient-theme-horizontal;
+}
+.shortcut a:hover .padding-card {
+  box-shadow: $shadow-custom;
+}
+
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+@import "vue-sidebar-menu/src/scss/vue-sidebar-menu.scss";
